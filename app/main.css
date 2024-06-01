@@ -1,0 +1,180 @@
+:root {
+    --clr-dark-blue-900: hsl(233, 47%, 7%);
+    --clr-dark-blue-600: hsl(244, 38%, 16%);
+    --clr-violet: hsl(277, 64%, 61%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --clr-text: hsla(0, 0%, 100%, 0.75);
+    --clr-heading: hsla(0, 0%, 100%, 0.6);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    --bg-violet: hsl(277deg, 100%, 50%, 0.42);
+    --bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
+}
+
+/* -------------------------------- CSS RESET ------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.25;
+    min-height: 100vh;
+    background-color: var(--clr-dark-blue-900);
+    font-size: calc(15 * 0.0625rem);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.card-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    color: var(--clr-text);
+    background-color: var(--clr-dark-blue-600);
+    border-radius: calc(12 * 0.0625rem);
+    margin: calc(88 * 0.0625rem) calc(24 * 0.0625rem);
+    max-width: calc(1110 * 0.0625rem);
+
+    --heading-fs: calc(28 * 0.0625rem);
+    --heading-leading: calc(32 / 28);
+    --heading-margin: 2.5rem 1.5rem 1rem 1.5rem;
+    --text-margin: 0 0 calc(40rem / 16) 0;
+    --text-leading: calc(25 / 15);
+}
+
+.card-wrapper h1 {
+    max-width: 18ch;
+    margin: var(--heading-margin);
+    font-size: var(--heading-fs);
+    color: var(--clr-white);
+    line-height: var(--heading-leading);
+}
+
+.card-wrapper p {
+    max-width: 38ch;
+    width: 80%;
+    margin: var(--text-margin);
+    line-height: var(--text-leading);
+}
+
+.card-wrapper h1 span {
+    color: var(--clr-violet);
+}
+
+.card-header {
+    position: relative;
+    min-height: calc(240rem / 16);
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-violet);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-light-violet);
+    mix-blend-mode: color-burn;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-wrapper {
+    width: 100%;
+}
+
+.stat-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: calc(24rem / 16);
+}
+
+.stat-wrapper .name {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: calc(13rem / 16);
+    margin: calc(4rem / 16) 0 0 0;
+}
+
+.stat-wrapper .highlight {
+    font-size: calc(24 * 0.0625rem);
+    color: var(--clr-white);
+    font-weight: var(--fw-bold);
+    font-family: "Inter", sans-serif;
+    letter-spacing: calc(0.1rem / 16);
+}
+
+@media only screen and (min-width: 824px) {
+    .card-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 11.125rem;
+
+        --heading-leading: calc(44 / 36);
+        --heading-margin: 0 0 calc(24rem / 16) 0;
+        --heading-fs: calc(36rem / 16);
+        --text-margin: 0 0 calc(73rem / 16) 0;
+    }
+
+    .card-header {
+        max-width: 33.75rem;
+    }
+
+    .card-content {
+        align-items: normal;
+        text-align: left;
+        margin: calc(70rem / 16) 0 0 calc(71rem / 16);
+    }
+    .stat-wrapper {
+        display: flex;
+    }
+
+    .stat-wrapper > div {
+        align-items: normal;
+        margin-right: calc(67rem / 16);
+    }
+}
