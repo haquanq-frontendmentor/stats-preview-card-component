@@ -9,7 +9,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
+- View the optimal layout depending on their device's screen size :yum:
 
 ### Solution
 
