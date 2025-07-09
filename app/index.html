@@ -3,40 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
     <title>Frontend Mentor | Stats preview card component</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <main class="card-wrapper">
-      <picture class="card-header">
-        <source srcset="./assets/image-header-desktop.jpg" media="(min-width: 824px)" />
-        <img src="./assets/image-header-mobile.jpg" alt="image-header" />
-        <span class="overlay1"><span class="overlay2"></span></span>
-      </picture>
-      <section class="card-content">
-        <h1>Get <span>insights</span> that help your business grow.</h1>
-        <p>
-          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
-          overall efficiency.
-        </p>
-        <div class="stat-wrapper">
-          <div>
-            <span class="highlight">10k+</span>
-            <p class="name">companies</p>
-          </div>
-          <div>
-            <span class="highlight">314</span>
-            <p class="name">templates</p>
-          </div>
-          <div>
-            <span class="highlight">12m+</span>
-            <p class="name">queries</p>
-          </div>
-        </div>
+    <main>
+      <section class="intro__card">
+        <picture class="intro__hero">
+          <source srcset="./assets/image-header-desktop.jpg" media="(min-width: 48em)" />
+          <img class="intro__image" src="./assets/image-header-mobile.jpg" alt="people working in office with laptops" />
+        </picture>
+        <div class="intro__content">
+          <h1 class="intro__title">
+            Get <span class="intro__title--highlight">insights</span> that help your business grow.
+          </h1>
+          <p class="intro__description">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer experience,
+            and overall efficiency.
+          </p>
+          <ul class="stat__list">
+            <li class="stat__item">
+              <strong class="stat__value">10k+</strong>
+              <p class="stat__description">companies</p>
+            </li>
+            <li class="stat__item">
+              <strong class="stat__value">314</strong>
+              <p class="stat__description">templates</p>
+            </li>
+            <li class="stat__item">
+              <strong class="stat__value">12M+</strong>
+              <p class="stat__description">queries</p>
+            </li>
+          </ul>
+        </section>
       </section>
     </main>
   </body>
