@@ -1,6 +1,6 @@
 {
-  "name": "fm-stats-preview-card",
-  "description": "Solution for frontendmentor.io challenge: stats-preview-card",
+  "name": "stats-preview-card-component",
+  "description": "Solution for frontendmentor.io challenge: stats-preview-card-component",
   "devDependencies": {
     "browser-sync": "^3.0.2"
   },
