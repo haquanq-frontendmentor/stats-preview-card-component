@@ -1,0 +1,15 @@
+{
+  "name": "Stats Preview Card Component",
+  "featured": false,
+  "colors": {
+    "brand": "#1C1938"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/stats-preview-card-component/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "newbie",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/mobile-first-html-and-css-C-r2ExdfO2"
+  }
+}
